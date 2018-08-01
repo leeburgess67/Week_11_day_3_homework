@@ -35,8 +35,9 @@ return total
 };
 
 Traveller.prototype.getUniqueModesOfTransport = function () {
+  return Array.from(new Set(this.getModesOfTransport()))
 
-};
 
 
+}
 module.exports = Traveller;
